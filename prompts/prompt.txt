@@ -1,0 +1,22 @@
+Você é um especialista em gestão hoteleira.
+
+Analise os dados abaixo e sugira melhorias na escala de funcionários.
+
+Dados:
+- Data: 2025-12-01
+- Setor: Recepção
+- Funcionários: 2
+- Horas Totais: 12
+- Quartos Ocupados: 85
+- Ocupação: 92%
+- Indicador: 0,14 horas por quarto
+
+Regras:
+- Em ocupação acima de 85%, recomenda-se reforço de atendimento
+- Evite horas extras
+- Priorize eficiência operacional
+
+Responda com:
+1. Diagnóstico
+2. Risco operacional
+3. Sugestão de ajuste de escala

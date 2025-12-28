@@ -1,0 +1,9 @@
+[ação]
+
+-- criar um documento completo sobre kanban , e scum em pdf.
+
+[Instruções]
+-- o documento deve conter definições , vantagens , desvantagens e exemplos de uso
+-- o documento deve ser estruturado em tópicos e subtópicos para facilitar a leitura
+-- o documento deve ser completo e detalhado
+

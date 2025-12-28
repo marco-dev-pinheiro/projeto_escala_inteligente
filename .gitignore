@@ -1,0 +1,17 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+
+# Ambientes Virtuais
+env/
+venv/
+.venv/
+
+# Configurações Sensíveis (Chaves de API)
+.env
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Dados e Saídas temporárias
+data/raw/
+outputs/relatorios_excel/*.csv
