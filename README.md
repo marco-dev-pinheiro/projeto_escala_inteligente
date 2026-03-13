@@ -31,7 +31,7 @@ mindmap
         Documentação - README.md
 
         
-# 🏨 Escala Inteligente: Otimização Hoteleira com IA
+# 🏨 Escala Inteligente: Otimização com IA
 
 Este projeto é uma solução completa de **Data Engineering** e **Business Intelligence** para gestão de escalas hoteleiras. O sistema automatiza a criação de escalas no regime 6x1, cruzando dados de ocupação histórica com inteligência artificial para otimizar a força de trabalho.
 
