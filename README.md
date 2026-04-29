@@ -1,6 +1,6 @@
 para rodar a dashboard - streamlit run src/003_load_dashboard.py
 
-
+````
 mindmap
   root((Escala Inteligente))
     Engenharia de Dados
@@ -29,6 +29,8 @@ mindmap
         Ambiente Virtual - venv
         Variáveis de Ambiente - .env
         Documentação - README.md
+
+````
 
         
 # 🏨 Escala Inteligente: Otimização com IA
