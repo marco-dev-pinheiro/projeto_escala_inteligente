@@ -1,35 +1,121 @@
 para rodar a dashboard - streamlit run src/003_load_dashboard.py
 
 ````
-mindmap
-  root((Escala Inteligente))
-    Engenharia de Dados
-      Extração
-        SQL / CSV Bruto
-        Pandas Dataframes
-      Transformação
-        Limpeza de Dados
-        Normalização de Ocupação
-        Lógica Trabalhista 6x1
-    Inteligência Artificial
-      OpenAI GPT-4
-        Análise de Tendências
-        Estratégia de Equipe
-        Prompt Engineering
-    Interface e Entrega
-      Dashboard Streamlit
-        Filtros Interativos
-        Gráficos de Turno e Ocupação
-        Heatmap de Escala
-      Exportação
-        Relatórios em PDF
-        Impressão Técnica
-    Segurança e Portfólio
-      Boas Práticas
-        Ambiente Virtual - venv
-        Variáveis de Ambiente - .env
-        Documentação - README.md
+flowchart LR
 
+%% ==================================================
+%% CONFIG VISUAL PREMIUM
+%% ==================================================
+classDef root fill:#19008A,color:#ffffff,stroke:#ffffff,stroke-width:4px,font-size:24px,font-weight:bold;
+classDef data fill:#006A8A,color:#ffffff,stroke:#ffffff,stroke-width:2px,font-weight:bold;
+classDef ia fill:#560085,color:#ffffff,stroke:#ffffff,stroke-width:2px,font-weight:bold;
+classDef ui fill:#008F83,color:#ffffff,stroke:#ffffff,stroke-width:2px,font-weight:bold;
+classDef sec fill:#0050B3,color:#ffffff,stroke:#ffffff,stroke-width:2px,font-weight:bold;
+
+classDef group fill:#F8FAFC,color:#111827,stroke:#CBD5E1,stroke-width:1.5px,font-weight:bold;
+classDef item fill:#FFFFFF,color:#1F2937,stroke:#E2E8F0,stroke-width:1px;
+
+linkStyle default stroke:#94A3B8,stroke-width:1.5px;
+
+%% ==================================================
+%% NÓ CENTRAL
+%% ==================================================
+ROOT(["🚀 Escala Inteligente"])
+class ROOT root
+
+%% ==================================================
+%% ENGENHARIA DE DADOS
+%% ==================================================
+subgraph DATA["📊 Engenharia de Dados"]
+direction TB
+
+EXT["📥 Extração"]
+EXT1["SQL / CSV Bruto"]
+EXT2["Pandas Dataframes"]
+
+TRF["⚙️ Transformação"]
+TRF1["Limpeza de Dados"]
+TRF2["Normalização de Ocupação"]
+TRF3["Lógica Trabalhista 6x1"]
+
+EXT --> EXT1 & EXT2
+TRF --> TRF1 & TRF2 & TRF3
+
+end
+
+class DATA data
+class EXT,TRF group
+class EXT1,EXT2,TRF1,TRF2,TRF3 item
+
+%% ==================================================
+%% INTELIGÊNCIA ARTIFICIAL
+%% ==================================================
+subgraph IA["🤖 Inteligência Artificial"]
+direction TB
+
+GPT["OpenAI GPT-4"]
+GPT1["Análise de Tendências"]
+GPT2["Estratégia de Equipe"]
+GPT3["Prompt Engineering"]
+
+GPT --> GPT1 & GPT2 & GPT3
+
+end
+
+class IA ia
+class GPT group
+class GPT1,GPT2,GPT3 item
+
+%% ==================================================
+%% INTERFACE E ENTREGA
+%% ==================================================
+subgraph UI["🖥️ Interface e Entrega"]
+direction TB
+
+DASH["Dashboard Streamlit"]
+DASH1["Filtros Interativos"]
+DASH2["Gráficos de Turno e Ocupação"]
+DASH3["Heatmap de Escala"]
+
+EXP["Exportação"]
+EXP1["Relatórios em PDF"]
+EXP2["Impressão Técnica"]
+
+DASH --> DASH1 & DASH2 & DASH3
+EXP --> EXP1 & EXP2
+
+end
+
+class UI ui
+class DASH,EXP group
+class DASH1,DASH2,DASH3,EXP1,EXP2 item
+
+%% ==================================================
+%% SEGURANÇA E PORTFÓLIO
+%% ==================================================
+subgraph SEC["🔐 Segurança e Portfólio"]
+direction TB
+
+GOOD["Boas Práticas"]
+GOOD1["Ambiente Virtual - venv"]
+GOOD2["Variáveis de Ambiente - .env"]
+GOOD3["Documentação - README.md"]
+
+GOOD --> GOOD1 & GOOD2 & GOOD3
+
+end
+
+class SEC sec
+class GOOD group
+class GOOD1,GOOD2,GOOD3 item
+
+%% ==================================================
+%% FLUXO PRINCIPAL (PIPELINE)
+%% ==================================================
+ROOT --> DATA
+DATA --> IA
+IA --> UI
+UI --> SEC
 ````
 
         
