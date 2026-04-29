@@ -1,6 +1,7 @@
 para rodar a dashboard - streamlit run src/003_load_dashboard.py
 
 ````
+mermaid
 flowchart LR
 
 %% ==================================================
@@ -116,6 +117,7 @@ ROOT --> DATA
 DATA --> IA
 IA --> UI
 UI --> SEC
+
 ````
 
         
